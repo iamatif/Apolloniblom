@@ -1,0 +1,125 @@
+{
+  "home": {
+    "title": "Welcome to Aplloniblom",
+    "title2": "Find Your Perfect Dahabiya Tour",
+    "blogs_title": "Latest Articles & News",
+    "mins": "Mins",
+    "read_also": "Read Also"
+  },
+  "data": {
+    "our-services": "Our Services",
+    "overview": "Overview",
+    "approach": "Our Approach",
+    "outcome": "The Outcome",
+    "about-us": "About Us",
+    "privacy-policy": "Privacy Policy",
+    "terms-and-conditions": "Terms And Conditions",
+    "blog": "Media Center",
+    "contact-us": "Contact Us",
+    "purchasing-process": "Purchasing Process",
+    "pricing": "Pricing",
+    "email": "Email",
+    "mobile": "Mobile",
+    "office": "Office",
+    "properties": "Properties",
+    "all_faqs": "All FAQs",
+    "all": "All",
+    "view_properties": "View Properties"
+  },
+  "notfoundPage": {
+    "title": "Page Not Found",
+    "tagline": "Unfortunately the page you are trying to reach can not be found",
+    "button_text": "Back to Home"
+  },
+  "thanks_errors": {
+    "cancell_title": "Your Reservation is Cancelled",
+    "failed_title": "Something went wrong",
+    "error": "error",
+    "error_message": "There a problem in your reservation please try again later  "
+  },
+  "form": {
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "phone_number": "Phone Number",
+    "email_Add": "Enter Email Address",
+    "message": "Leave your message",
+    "optional": "Optional"
+  },
+  "validation": {
+    "firstName": {
+      "required": "First name required",
+      "invalid": "Invalid value: numbers and symbols are not allowed",
+      "min": "First name should be at least 3 characters."
+    },
+    "lastName": {
+      "required": "Last name required",
+      "invalid": "Invalid value: numbers and symbols are not allowed",
+      "min": "Last name should be at least 3 characters."
+    },
+    "email": {
+      "invalid": "Invalid email address",
+      "required": "Required Field"
+    },
+    "mobile": {
+      "invalid": "Invalid mobile number format",
+      "required": "Required Field"
+    },
+    "message": {
+      "required": "Required Field"
+    },
+    "service": {
+      "required": "Please select an inquiry type"
+    }
+  },
+  "buttons": {
+    "explore": "Explore",
+    "view_gallery": "View All Gallery",
+    "view_media": "View All Media",
+    "view_faqs": "View All FAQs",
+    "get_direction": "Get direction",
+    "apply": "Apply Now",
+    "discover_more": "Discover More",
+    "explore_all": "Explore All",
+    "request": "Request a Quote"
+  },
+  "thanks": {
+    "lead": {
+      "title": "Thank you for your interest!",
+      "subtitle": "We’ve received your request and one of our team members will contact you soon to discuss the best solutions tailored to your goals."
+    }
+  },
+  "singleProperty": {
+    "utilities": "Utilities",
+    "location": "Location",
+    "features": "Features",
+    "property_details": "Property Details",
+    "bedrooms": "Bedrooms",
+    "bathroom": "Bathroom",
+    "Sqm_Surface": "Sqm Surface",
+    "Sqm_Residential_area": "Sqm Residential area",
+    "property_code": "Property Code",
+    "form:title": "Request Quotation",
+    "form_paragraph": "Get Your Personalized Quote Today"
+  },
+  "filter": {
+    "locations": "Locations",
+    "keyword": "Keyword / Code",
+    "category": "Select Category",
+    "condition": "Select Condition",
+    "energy": "Select Energy",
+    "bed_bath": "Bed Rooms & Baths",
+    "price": "Price Range",
+    "less_filter": "Less Filers",
+    "more_filter": "More Filers",
+    "view_properties": "View Properties",
+    "bedrooms": "Bedrooms",
+    "bathroom": "Bathrooms",
+    "done": "Done",
+    "reset": "Reset",
+    "set_price": "Set Price Range",
+    "minimum": "Minimum",
+    "maximum": "Maximum",
+    "no_properties": "No properties found.",
+    "search": "Search"
+  }
+}

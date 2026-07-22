@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body,
+.EnglishFont {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body.ar,
+.ArabicFont {
+  font-family: "Tajawal", sans-serif;
+}
+
+body {
+  --space: 16px;
+  --space-md: calc(var(--space) * 2);
+  --content-max-width: 1392px;
+  background: white;
+
+}
+
+
+.multi_scroll_content {
+  display: grid;
+  grid-template-columns:
+    [full-start] 1fr [content-start] min(var(--content-max-width),
+      100% - var(--space-md) * 1) [content-end] 1fr [full-end];
+}
+
+.multi_scroll_content>* {
+  grid-column: content;
+}
+
+.multi_scroll_content .multi_scroll_content_gallery {
+  grid-column: full;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: inherit;
+  grid-template-columns: inherit;
+  padding-block-start: var(--gap);
+  /* padding-bottom: 60px; */
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+.multi_scroll_content .multi_scroll_content_gallery .wrapper {
+  grid-column: content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  gap: var(--space);
+  width: max-content;
+  padding-inline-end: var(--space);
+}
+
+
+
+@layer base {
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+    -webkit-text-fill-color: #000 !important;
+    /* adjust text color if needed */
+    transition: background-color 5000s ease-in-out 0s;
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.noScrollBar::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+.PhoneInput {
+  direction: ltr;
+  border: none !important;
+}
+
+.PhoneInputInput {
+  background: transparent;
+}
+
+.PhoneInputInput:focus-visible {
+  outline: none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+i {
+  font-style: italic;
+}
+
+.gradient-text {
+  background: linear-gradient(92.48deg, #000000 3.45%, #B89B64 82%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.content h2 {
+  color: #2C2C35;
+  font-size: 28px;
+  font-weight: 600;
+
+}
+
+.content p {
+  color: #6B6D7A;
+  font-size: 16px;
+}
+
+.content ul li,
+.content ol li {
+  position: relative;
+  /* display: flex; */
+  gap: 10px;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.content ul li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #000000;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+
+.content ol {
+  counter-reset: tidbit-counter;
+}
+
+.content ol li::before {
+  counter-increment: tidbit-counter;
+  content: counter(tidbit-counter) ".";
+  display: inline-block;
+  background: transparent;
+  position: absolute;
+  left: 0;
+  top: 0px;
+}
+
+@media (max-width:1120px) {
+  .homepageProperty {
+    flex: 0 0 326px;
+  }
+
+  .homepageBlogs {
+    flex: 0 0 362px;
+  }
+}
+
+
+.termscontent p {
+  color: #4D4D4D;
+  font-size: 16px;
+}
+
+.termscontent h2 {
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+
+
+.termscontent ul li {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: #4D4D4D;
+  position: relative;
+  padding: 0 20px;
+
+}
+
+.termscontent ul li+li {
+  margin-top: 10px;
+}
+
+.termscontent ul li::before {
+  content: "";
+  background: #4D4D4D;
+  border-radius: 50%;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: 6px;
+  left: 8px;
+}
+
+body.ar .termscontent ul li::before {
+  right: 8px;
+  left: auto;
+
+}
+
+@media (max-width:767px) {
+  .termscontent p {
+    font-size: 12px;
+  }
+
+  .termscontent h2 {
+    font-size: 14px;
+  }
+
+  .termscontent ul li {
+    font-size: 12px;
+
+
+  }
+}
