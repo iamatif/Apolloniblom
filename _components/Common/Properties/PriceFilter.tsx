@@ -90,6 +90,7 @@ export default function PriceFilter({
                             : "fixed bottom-0 left-0 w-full z-[100] border-t border-Gray20"
                         } bg-white p-6 flex flex-col gap-5`}
                     >
+                        
                         {!isLg && <span className="bg-gray-300 w-10 h-1 rounded-full mx-auto mb-2" />}
                         
                         <h4 className="text-lg font-semibold text-primary">{t("filter.set_price")}</h4>
