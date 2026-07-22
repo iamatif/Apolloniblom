@@ -3,7 +3,6 @@ import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import BreadCrumb from '../Common/BreadCrumb'
 import GallerySlider from '../Common/Properties/Gallery'
-import { SingleAmenity } from '../Common/Properties/PropertyWidget'
 import Area from '../SVGs/Area'
 import Bathrooms from '../SVGs/Bathrooms'
 import Bedrooms from '../SVGs/Bedrooms'
@@ -13,6 +12,11 @@ import Done from '../SVGs/Done'
 import NeedHelp, { NeedHelpProps } from '../Common/NeedHelp'
 import LeadForm from '../Common/form/LeadForm'
 
+
+interface SingleAmenity {
+    name: string;
+    logo: { src: string; alt: string };
+}
 
 interface SinglePropretyProps {
     id: number,
