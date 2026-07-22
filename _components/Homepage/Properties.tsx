@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import PropertyWidget, { PropertiesWidget } from '../Common/Properties/PropertyWidget'
+import PropertyWidget, { type PropertyWidget as PropertyWidgetType } from '../Common/Properties/PropertyWidget'
 import ButtonArrow from '../SVGs/ButtonArrow'
 import { motion } from 'framer-motion'
 import { useLocale } from 'next-intl'
