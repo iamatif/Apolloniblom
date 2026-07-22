@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import PropertyWidget, { type PropertyWidget as PropertyWidgetType } from '../Common/Properties/PropertyWidget'
+// Yahan Interface ka naya naam 'PropertyWidgetData' mangwayein
+import PropertyWidget, { PropertyWidgetData } from '../Common/Properties/PropertyWidget'
 import ButtonArrow from '../SVGs/ButtonArrow'
 import { motion } from 'framer-motion'
 import { useLocale } from 'next-intl'
@@ -13,7 +14,8 @@ export interface PropertiesProps {
     }
 }
 
-export default function Properties({ data, PropertiesWidgets }: { data: PropertiesProps, PropertiesWidgets: PropertiesWidget[] }) {
+// Yahan 'PropertiesWidgets' ki type 'PropertyWidgetData[]' kar dein
+export default function Properties({ data, PropertiesWidgets }: { data: PropertiesProps, PropertiesWidgets: PropertyWidgetData[] }) {
     const locale = useLocale();
     // Words split logic fix: split(' ') use karein taake poore shabd milein
     const words = data.title.split(' ');
