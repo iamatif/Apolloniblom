@@ -4,12 +4,12 @@ import { useSearchParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import NeedHelp, { NeedHelpProps } from '../Common/NeedHelp'
 import Filter from '../Common/Properties/filter'
-import PropertyWidget, { PropertiesWidget } from '../Common/Properties/PropertyWidget'
+import PropertyWidget from '../Common/Properties/PropertyWidget'
 import { RegionsWidget } from '../Homepage/Regions'
 import { useTranslations } from 'next-intl'
 
 interface Props {
-    AllPropertiesData: PropertiesWidget[],
+    AllPropertiesData: any[],
     NeedHelpComp: NeedHelpProps,
     locationsData: RegionsWidget[],
     CategoriesData: { id: number, name: string }[],
@@ -21,7 +21,7 @@ export default function AllProperties({ AllPropertiesData, NeedHelpComp, locatio
     const searchParams = useSearchParams();
     const t = useTranslations();
     const [loading, setLoading] = useState(false);
-    const [properties, setProperties] = useState<PropertiesWidget[]>(AllPropertiesData);
+    const [properties, setProperties] = useState<any[]>(AllPropertiesData);
     const [selectedLocation, setSelectedLocation] = useState<{ id: number; name: string }[]>([]);
     const [selectedCategory, setSelectedCategory] = useState<{ id: number; name: string }[]>([]);
     const [selectedCondition, setSelectedCondition] = useState<{ id: number; name: string }[]>([]);

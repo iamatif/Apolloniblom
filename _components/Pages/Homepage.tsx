@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import BlogWidget, { BlogWidgetProps } from '../Common/BlogWidget'
 import NeedHelp, { NeedHelpProps } from '../Common/NeedHelp'
-import { PropertiesWidget } from '../Common/Properties/PropertyWidget'
+import PropertyWidget from '../Common/Properties/PropertyWidget'
 import SingleFaq, { QuestionProps } from '../Common/SingleFaq'
 import About, { AboutProps } from '../Homepage/About'
 import Banners, { BannersProps } from '../Homepage/Banners'
@@ -44,7 +44,7 @@ interface Props {
     Blogs: BlogWidgetProps[],
     AllFaqsData: QuestionProps[],
     AllRegionsData: RegionsWidget[],
-    AllPropertiesData: PropertiesWidget[],
+    AllPropertiesData: any[],
     Locations: RegionsWidget[],
     Categories?: { id: number; name: string }[];
 }
